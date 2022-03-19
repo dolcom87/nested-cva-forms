@@ -1,0 +1,7 @@
+<div class="container">
+  <form [formGroup]="billingInfoForm" (ngSubmit)="onSubmit()">
+    <app-address-info formControlName="addressInfo"></app-address-info>
+    <app-basic-info formControlName="basicInfo"></app-basic-info>
+    <button type="submit" [disabled]="billingInfoForm.invalid">Place order</button>
+  </form>
+</div>
